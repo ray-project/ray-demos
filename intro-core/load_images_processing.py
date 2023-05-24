@@ -1,6 +1,7 @@
 import tqdm
 from pathlib import Path
 import os
+import tasks_helper_utils as t_utils
 
 DATA_DIR = Path("/tmp/task_images")
 
