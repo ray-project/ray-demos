@@ -172,13 +172,11 @@ def download_images(url: str, data_dir: str) -> None:
     with open(img_name, "wb+") as f:
         f.write(img_data)
 
-
-def transform_image(img_name: str, verbose=False):
+def transform_image(img: Image, verbose=False):
     """
     This is a deliberate compute intensive image transfromation and tensor operation
     to simulate a compute intensive image processing
     """
-    img = Image.open(img_name)
     before_shape = img.size
 
     # Make the image blur with specified intensify

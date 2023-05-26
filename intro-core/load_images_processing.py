@@ -3,7 +3,7 @@ from pathlib import Path
 import os
 import tasks_helper_utils as t_utils
 
-DATA_DIR = Path("/tmp/task_images")
+DATA_DIR = Path(os.getcwd() + "/task_images")
 
 # Check if dir exists. If so ignore download.
 # Just assume we have done from a prior run
